@@ -52,7 +52,7 @@ class Chat implements MessageComponentInterface {
 		$conn->close();
 	}
 }
-$server = new Ratchet\App('localhost', 8080);
+$server = new Ratchet\App('localhost', 3000);
 $server->route('/', new Chat, ['*']);
 $server->run();
 ?>
